@@ -1,0 +1,240 @@
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+
+$colors: (
+   primary: #535b75,
+   primary-dark: #2a1a4e,
+   text: #ffffff,
+   bar: #ffbf00,
+   hover: rgb(221, 44, 38)
+);
+
+@function color ($color-name) {
+    @return map-get($colors, $color-name)
+} ;
+
+body{
+    margin:0;
+    padding: 0;
+    font-family: 'Monserrat', sans-serif;
+    background-color: color(primary-dark);
+    color: color(text);
+}
+
+.navigation{
+    
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: color(text); 
+    
+
+}
+
+.links{
+   
+    float: center;
+    margin: 1em auto;
+    display: flex;
+    text-decoration: none;
+    color: color(text); 
+}
+
+
+.link{
+    
+    text-decoration: none;
+    list-style-type: none;
+    margin: 1em auto;
+    text-align: center;
+    font-weight: bold; 
+    color: color(text); 
+}
+
+a{
+     text-decoration: none;
+     cursor: pointer;
+     color: color(white);
+}
+
+a:visited{
+    color: color(text); 
+}
+
+.pic{
+    border-radius: 50%;
+    max-width: 27%;
+    height: auto;
+    margin-top: 15vh;
+    margin-left: 5%;
+    margin-right: 12%;
+    position: absolute;
+}
+
+.info{
+    float: right;  
+    margin: 1em;
+    margin-left: 13%;
+    margin-top: 15vh;
+    
+}
+
+.me{
+    font-size: 2.5rem;
+    font-weight: 700;   
+}
+
+
+.ed{
+    padding-top:2em;
+    
+    &::after{
+        content: ' ';
+        border-top: 5px solid color(primary);
+        display: block;
+        width: 80%;
+    }
+}
+
+.college{
+    display: block;
+    text-align: left;
+    width: 100%;
+    text-justify: left;
+    
+}
+.about {
+    width: 100%;
+    text-align: left;    
+}  
+
+
+  
+#bar{
+
+    &::after{
+        content: ' ';
+        border-top: 15px solid color(bar);
+        display: block;
+        width: 100%;
+    }
+
+}
+
+#bar2{
+    &::after{
+        content: ' ';
+        border-top: 5px solid color(bar);
+        display: block;
+        width: 80%;
+
+    }
+}
+
+#bar3{
+    &::after{
+        content: ' ';
+        border-top: 5px solid color(bar);
+        display: block;
+        width: 45%;
+    }
+}
+
+
+.project{   
+   display: inline-block;
+   margin: 4%;
+}
+
+
+
+.proj{
+    padding-top:1em;
+    display: inline-block;
+    margin-left: 60%;
+    width: 100%;
+    
+    
+    &::after{
+        content: ' ';
+        border-top: 5px solid color(bar);
+        display: block;
+        width: 60%;
+    }
+}
+
+.proj-info{
+    display: inline-block;
+    text-align: left;
+    width: 100%;
+    text-justify: left;
+    margin-left: 60%;
+    
+}
+
+.img{
+   
+    max-width: 150px;
+    height: auto;
+    margin: 2%;
+    position: absolute;
+    float: right;
+    display: block;
+}
+
+li{
+    text-decoration: none;
+    list-style-type: bullet;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: 7%;
+    
+}
+
+.skill-list{
+    display: inline-block;
+    margin-left:30%;
+}
+
+.skill-list2{
+    display: inline-block;
+    margin-right:30%;
+    padding-left: 7%;
+}
+
+
+.skills{
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-left: 30%;
+    margin-top: 4%;
+
+        &::after{
+            content: ' ';
+            border-top: 5px solid color(bar);
+            display: block;
+            width: 50%;
+        }
+}
+
+.intro{
+
+    font-size: 2.5rem;
+    font-weight: 700; 
+    margin:1em auto;
+    margin-left: 15%;
+
+    &::after{
+        content: ' ';
+        border-top: 5px solid color(bar);
+        display: block;
+        width: 40%;
+    }
+}
+
+.purpose{
+    margin-left: 15%;
+    width: 100%;
+    text-align: left;
+
+}
